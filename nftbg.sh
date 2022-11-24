@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#- task: blockchainid="1"
+#- task: contract="0xd07dc4262bcdbf85190c01c996b4c06a461d2430"
+#- task: tokenid="3164"
+
+#- task: qrencode -s 6 -l L -o 'nftbg2.png' ""{"b":"$blockchainid","c":"$contract","i":"$tokenid"}"" && convert nftbg2.png    -resize 246x246  nftbg2.png
+
 # https://www.cloudsavvyit.com/8382/how-to-create-qr-codes-from-the-linux-command-line/
 qrencode -s 6 -l L -o 'nftbg2.png' '{"c":"0xd07dc4262bcdbf85190c01c996b4c06a461d2430","i":"3164","b":"1"}' && convert nftbg2.png    -resize 246x246  nftbg2.png
 convert nftbg1.png nftbg2.png -background none +append nftbg.png
