@@ -2,3 +2,5 @@ applier:
 - from /1/config/nfts.json, only accept background that have the "art" tag
 - get the blockchain/network ID, contract address and token ID, then form QR
 - apply the background with the updated nftmark@floflis zmb spice/extension
+
+Floflis 20: use SVG instead of PNG!
