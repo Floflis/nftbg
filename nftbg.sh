@@ -10,6 +10,8 @@
 qrencode -s 6 -l L -o 'nftbg2.png' '{"c":"0xd07dc4262bcdbf85190c01c996b4c06a461d2430","i":"3164","b":"1"}' && convert nftbg2.png    -resize 246x246  nftbg2.png
 convert nftbg1.png nftbg2.png -background none +append nftbg.png
 
+# may be useful https://stackoverflow.com/a/67427236/5623661, also insp on watermarkmaker
+
 #convert -size 492x246 xc:none -draw "roundrectangle 0,0,492,246,15,15" nftbgmask.png
 ##convert nftbg.png -matte nftbgmask.png \
 ##-compose DstIn -composite nftbgtest.png
